@@ -1,0 +1,53 @@
+body {
+    text-align: center;
+}
+
+table {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    border-collapse: collapse;
+}
+
+thead tr *[colspan] {
+    background-color: aquamarine;
+}
+
+thead tr img {
+    height: 50px;
+    width: 50px;
+}
+
+th,
+td {
+    border: solid 1px;
+}
+
+.primera {
+    background-color: salmon;
+    color: white;
+    border-color: black;
+    padding: 0 0.6ch;
+}
+
+.gb {
+    background-color: gray;
+    font-size: 32px;
+    padding: 0.25ch;
+}
+
+
+td ul li {
+    text-align: left;
+    color: red;
+    padding-right:0.5ch;
+}
+
+tr *[colspan] {
+    background-color: aquamarine;
+}
+
+#cinco{
+    background-color: yellow;
+    height: 130px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Iniciar sesión</title>
+        <meta charset="utf-8">
+        <link href="styles.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <header>
+        <a href=main.html><button class="button-64"><span class="text">Inicio</span></button></a>
+        <a href=form.html><button class="button-64"><span class="text">Vuelos</span></button></a>
+        <a href=form.html><button class="button-64"><span class="text">Transporte</span></button></a>
+        <a href=form.html><button class="button-64"><span class="text">Exploracion</span></button></a>
+        <!--
+        <div class="dropdown">
+            <button class="button-menu"><span class="text">Menu<i class="gg-menu-round"></i></span></button>
+            <div class="dropdown-content">
+                <a href=main.html><button class="button-64"><span class="text">Configuración</span></button></a>
+                <a href=form.html><button class="button-64"><span class="text">Moneda</span></button></a>
+                <a href=form.html><button class="button-64"><span class="text">Soporte</span></button></a>
+                <a href=form.html><button class="button-64"><span class="text">Salir</span></button></a>
+            </div>
+        </div>
+        -->
+    </header>
+
+    <body>
+        <form>
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre">
+            <label for="apellidos">Apellidos: </label>
+            <input type="text" id="apellidos"><br />
+            <label for="email">Email: </label>
+            <input type="email" id="email">
+            <a href="https://threshstwinsoul.wordpress.com/" target="_blank">Ayuda</a><br />
+            <label for="date">Fecha: </label>
+            <input type="date" id="date">
+            <label for="time">Hora: </label>
+            <input type="time" id="time"><br />
+            <label for="number">Nº billetes: </label>
+            <input type="number" id="number" step=1><br />
+            <label for="tel">Nº teléfono</label>
+            <input type="tel" id="tel"><br />
+            <p>Sexos:
+                <input type="radio" id="sexo_hombre" name="sexo" value="Hombre">
+                <label for="sexo_hombre">Hombre</label>
+                <input type="radio" id="sexo_mujer" name="sexo" value="Mujer">
+                <label for="sexo_mujer">Mujer</label>
+            </p>
+        </form>
+    </body>
+</html>
