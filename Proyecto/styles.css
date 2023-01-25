@@ -5,11 +5,10 @@
 
 /*<i class="gg-support"></i>*/
 body {
-    background-color: rgb(5, 6, 45);
+    background-color: rgb(6, 8, 88);
 }
 
 header.session {
-    background-color: rgb(5, 6, 45);
     display: flex;
     align-items: baseline;
     justify-content: space-between;
@@ -53,7 +52,7 @@ header.session .button-menu span {
 }
 
 button.button-menu span i.gg-log-in {
-    margin-left: 13px;
+    margin-left: 15px;
 }
 
 button.button-menu span i.gg-twilio {
@@ -68,6 +67,10 @@ button.button-menu span i.gg-twilio {
 .button-menu:hover .fecha>p{
     transform: translateY(-3px);
     transition: 1s;
+}
+
+.SA i{
+    margin-left: 2%;
 }
 
 .SA:hover i{
@@ -208,7 +211,7 @@ animation: displacement 2s ;
     }
 
     100%{
-        transform: translateX(200px);
+        transform: translateX(400px);
         opacity: 0;
     }
     
