@@ -6,18 +6,21 @@
 /*<i class="gg-support"></i>*/
 body {
     background-color: rgb(6, 8, 88);
+    display: flex;
+    flex-direction: column;
 }
 
-header.session {
+.session {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
     color: #FFFFFF;
     font-family: Phantomsans, sans-serif;
-    margin-inline: 12px;
+    margin: 1% 5%;
 }
 
-div.SA  {
+
+div.SA {
     display: flex;
     font-size: 20px;
     background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
@@ -26,7 +29,8 @@ div.SA  {
     box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
     padding: 4px;
     cursor: grab;
-    width:100%;
+    width: 100%;
+    margin-left: 15px;
 }
 
 div.SA span {
@@ -47,8 +51,8 @@ header.session div.buttons {
 }
 
 header.session .button-menu span {
-    width: 220px;
-    height: 2.35ch;
+    width: 275px;
+    height: 3ch;
 }
 
 button.button-menu span i.gg-log-in {
@@ -64,17 +68,12 @@ button.button-menu span i.gg-twilio {
     transition: 1s;
 }
 
-.button-menu:hover .fecha>p{
-    transform: translateY(-3px);
-    transition: 1s;
-}
-
-.SA i{
+.button-menu i {
     margin-left: 2%;
 }
 
-.SA:hover i{
-animation: displacement 2s ;
+.button-menu:hover i {
+    animation: displacement 2s;
 }
 
 .dropdown {
@@ -155,17 +154,16 @@ animation: displacement 2s ;
     justify-content: center;
 }
 
-.button-64:hover span,
-.button-menu:hover span {
-    background: none;
-}
-
 .button-menu:hover span i.gg-twilio {
     animation: loader 2s infinite;
 }
 
-.landing{
+main {
     display: flex;
+    justify-content: center;
+}
+
+.landing {
     background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
     border: 0;
     border-radius: 30px;
@@ -174,24 +172,37 @@ animation: displacement 2s ;
     color: #FFFFFF;
     font-family: Phantomsans, sans-serif;
     padding: 4px;
-    margin: 3px;
-    cursor: grab;
+    width: 85%;
+    
 }
 
-.landing span{
+.landing span {
     background-color: rgb(5, 6, 45);
-    padding: 5px 5px;
     border-radius: 30px;
-    width: 100%;
-    height: 100%;
-    transition: 500ms;
     display: flex;
     align-items: center;
-    justify-content: center;
-
+    justify-content: center; 
 }
-.landing img{
+
+.landing span img {
     border-radius: 25px;
+    width: 100%;
+    height: 500px;
+    z-index: 0;
+}
+
+.landing span .texto-landing{
+    z-index: 3;
+    position: absolute;
+    width: 30%;
+    left: 8.25%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 25px 0 0 25px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.8px);
+    -webkit-backdrop-filter: blur(1.8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    height: 500px;
 }
 
 @keyframes loader {
@@ -206,19 +217,12 @@ animation: displacement 2s ;
 }
 
 @keyframes displacement {
-    0%{
-        opacity: 1;
+    100% {
+        transform: translateX(50px);
     }
-
-    100%{
-        transform: translateX(400px);
-        opacity: 0;
-    }
-    
 }
 
 @media (min-width: 768px) {
-
     .button-64,
     .button-menu {
         font-size: 16px;
