@@ -5,7 +5,10 @@
 
 /*<i class="gg-support"></i>*/
 
-html {}
+html {
+    display: flex;
+    flex-direction: column;
+}
 
 body {
     background-color: rgb(255, 255, 255);
@@ -168,7 +171,7 @@ main {
     color: #0e0e0e;
     font-family: Phantomsans, sans-serif;
     padding: 4px;
-    width: 30%;    
+    width: 30%;
     margin: 0 25px;
 }
 
@@ -210,7 +213,7 @@ span .texto-landing {
     display: flex;
     flex-direction: row;
     height: 60px;
-    width: 65%;  
+    width: 65%;
     align-items: flex-end;
     justify-content: space-between;
     color: black;
@@ -259,13 +262,18 @@ span .texto-landing {
     }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1500px) {
+
+    main {
+        margin-top: 50%;
+    }
 
     .hero-section {
         flex-direction: column;
+        margin-left: 15%;
     }
 
-    .landing{
-        width:80%;
+    .landing {
+        width: 80%;
     }
 }
