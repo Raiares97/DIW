@@ -11,6 +11,11 @@ html {
     flex-direction: column;
 }
 
+a:link{
+    text-decoration: none;
+    width:20%;
+}
+
 body {
     background-color: rgb(255, 255, 255);
     display: flex;
@@ -20,55 +25,68 @@ body {
 }
 
 .header {
+    
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
     color: #FFFFFF;
     font-family: Phantomsans, sans-serif;
-    margin: 1% 3%;
+    margin: 1% 2.5%;
+    height: 65px;
 }
 
-.header div.buttons {
-    display: flex;
-    justify-self: end;
-    align-items: baseline;
-    justify-content: baseline;
+.header .button-menu {
+    width: 20%;
+    height: 85%;
+    padding: 10px 5px;
+    align-items: center;
 }
 
 .header .button-menu span {
-    width: 275px;
-    height: 3ch;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 div.SA {
     display: flex;
-    font-size: 20px;
-    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
-    border: 0;
-    border-radius: 200px;
-    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-    padding: 4px;
-    cursor: grab;
-    width: 100%;
-    margin-left: 15px;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5%;
+    width: 80%;
+    height: 100%;
 }
 
-div.SA span {
+div.SA a:link .button-64 {
     display: flex;
-    align-content: center;
-    justify-content: center;
-    background-color: rgb(5, 6, 45);
-    padding: 6px 150px 6px 150px;
-    border-radius: 200px;
+    align-items: center;
+    text-decoration: none;
+    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+    border: 0;
+    border-radius: 30px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    font-family: Phantomsans, sans-serif;
+    font-size: 16px;
+    padding: 10px 5px;
+    cursor: grab;
     width: 100%;
+    height: 55px;
 }
+
+div.SA  .button-64 span {
+    display: flex;
+    align-items: center;
+}
+
 
 .button-64 {
     display: flex;
     background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
     border: 0;
     border-radius: 30px;
-    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    text-decoration: none;
     box-sizing: border-box;
     color: #FFFFFF;
     font-family: Phantomsans, sans-serif;
@@ -97,13 +115,11 @@ div.SA span {
     background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
     border: 0;
     border-radius: 30px;
-    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    /*box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;*/
     box-sizing: border-box;
     color: #FFFFFF;
     font-family: Phantomsans, sans-serif;
     padding: 4px;
-    cursor: grab;
-    width: auto;
 }
 
 .button-64:active,
@@ -128,7 +144,6 @@ div.SA span {
 
 .button-menu i {
     margin-left: 2%;
-    margin-bottom: 2%;
 }
 
 button.button-menu span i.gg-log-in {
@@ -162,13 +177,11 @@ main {
     align-content: center;
     width: 100%;
     height: 75%;
-    background-color: #00DDEB;
 }
 
 .landing {
     background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
     border-radius: 30px;
-    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
     box-sizing: border-box;
     color: #0e0e0e;
     font-family: Phantomsans, sans-serif;
@@ -193,34 +206,35 @@ main {
 
 span .texto-landing {
     height: 40%;
-
     border-radius: 25px 0 0 25px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    /*
     backdrop-filter: blur(1.8px);
     -webkit-backdrop-filter: blur(1.8px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);*/
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     text-align: center;
     word-break: break-all;
     padding: 0 2%;
     border-radius: 0 0 30px 30px;
 }
 
-.texto-landing p{
+.texto-landing p {
     overflow: hidden;
     text-align: center;
+    display: flex;
+    align-items: center;
+    height: 50%;
 }
 
 .texto-landing .buttons-inline {
     background: linear-gradient(288deg, #AF40FF, #5B42F3, #00DDEB);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(1.8px);
     display: flex;
     flex-direction: row;
     height: 60px;
-    width:90%;
+    width: 80%;
     align-items: flex-end;
     justify-content: space-between;
     color: black;
@@ -239,7 +253,7 @@ span .texto-landing {
 }
 
 .texto-landing .button-64:hover .text {
-    animation: herosection-color-change 1s forwards;
+    animation: herosection-color-change 1.25s forwards;
 }
 
 @keyframes loader {
@@ -265,28 +279,43 @@ span .texto-landing {
     }
 
     100% {
-        background-color: rgba(0, 212, 71, 0.9);
+        background-color: rgb(238, 95, 0);
     }
 }
 
 @media (max-width: 1000px) {
 
-    main {
-        margin-top:350px;
-    }
-
     .hero-section {
         flex-direction: column;
-        justify-items: center;
         align-items: center;
+        justify-content: space-around;
+        height: 1500px;
     }
 
     .texto-landing .buttons-inline {
         max-width: 70%;
+        margin-bottom: 2%;
     }
 
     .landing {
-        min-width:650px;
-        margin: 0 0 2% 0;
+        min-width: 500px;
+        max-height: 30%;
     }
+
+    div.SA {
+        visibility: collapse;
+    }
+
+    .header {
+        flex-direction: column;
+        align-self: center;
+        align-items: center;
+        justify-items: center;
+        width: 100%;
+    }
+
+    .button-menu span {
+        width: 100%;
+    }
+
 }
