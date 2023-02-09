@@ -18,7 +18,7 @@ a:link {
 }
 
 body {
-    background-color: rgba(5, 22, 180, 0.842);
+    background-color: rgba(3, 23, 206, 0.85);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     display: flex;
