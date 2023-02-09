@@ -18,7 +18,7 @@ a:link {
 }
 
 body {
-    background-color: rgba(36, 2, 131, 0.75);
+    background-color: rgba(5, 22, 180, 0.842);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     display: flex;
@@ -55,41 +55,6 @@ body {
     align-items: center;
 }
 
-div.SA {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 10%;
-    background-color: rgba(250, 250, 250, 0.2);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    /*border: 1px solid rgba(3, 163, 129, 0.63);*/
-}
-
-div.SA a:link .button-64 {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    background-image: linear-gradient(144deg, #af40ff, #5B42F3 50%, rgb(0, 221, 235));
-    border: 0;
-    border-radius: 30px;
-    box-sizing: border-box;
-    color: #FFFFFF;
-    font-family: Phantomsans, sans-serif;
-    font-size: 16px;
-    padding: 10px 5px;
-    cursor: grab;
-    width: 100%;
-    height: 55px;
-}
-
-div.SA .button-64 span {
-    display: flex;
-    align-items: center;
-}
 
 
 .button-64 {
@@ -178,9 +143,53 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    height: 875px;
+    align-self: center;
 
+    height: 875px;
+    width: 85%;
+    background-color: rgba(10, 0, 0, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    margin-top: 2%;
+}
+
+
+div.SA {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 10%;
+    background-color: rgba(250, 250, 250, 0.2);
+    border-radius: 16px 16px 0 0;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    /*border: 1px solid rgba(3, 163, 129, 0.63);*/
+}
+
+div.SA a:link .button-64 {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background-image: linear-gradient(144deg, #af40ff, #5B42F3 50%, rgb(0, 221, 235));
+    border: 0;
+    border-radius: 30px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    font-family: Phantomsans, sans-serif;
+    font-size: 16px;
+    padding: 10px 5px;
+    cursor: grab;
+    width: 100%;
+    height: 55px;
+}
+
+div.SA .button-64 span {
+    display: flex;
+    align-items: center;
 }
 
 .hero-section {
@@ -189,9 +198,9 @@ main {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 75%;
-    background-color: rgba(250, 250, 250, 0.2);
-    border-radius: 16px;
+    height: 90%;
+    background-color: rgba(250, 250, 250, 0.05);
+    border-radius: 0 0 16px 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
