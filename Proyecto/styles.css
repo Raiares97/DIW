@@ -144,15 +144,14 @@ main {
     flex-direction: column;
     align-items: center;
     align-self: center;
-
-    height: 875px;
-    width: 85%;
+    height: 1160px;
+    width: 100%;
     background-color: rgba(10, 0, 0, 0.2);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    margin-top: 2%;
+    margin-top: 1%;
 }
 
 
@@ -198,7 +197,7 @@ div.SA .button-64 span {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 90%;
+    height: 100%;
     background-color: rgba(250, 250, 250, 0.05);
     border-radius: 0 0 16px 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -238,7 +237,8 @@ span .texto-landing {
     /*
     backdrop-filter: blur(1.8px);
     -webkit-backdrop-filter: blur(1.8px);
-    border: 1px solid rgba(255, 255, 255, 0.3);*/
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    */
     display: flex;
     align-items: center;
     justify-content: space-around;
